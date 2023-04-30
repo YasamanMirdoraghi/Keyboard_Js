@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgba(212, 206, 206, 0.829);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  padding: 25px;
+}
+
+.keybord {
+  width: 750px;
+  padding: 25px;
+  border-radius: 15px;
+  -webkit-box-shadow: -4px -4px 8px #ffff, 4px 4px 8px rgba(0, 0, 0, 0.473);
+          box-shadow: -4px -4px 8px #ffff, 4px 4px 8px rgba(0, 0, 0, 0.473);
+}
+
+.keybord .dis {
+  border: 2px solid red;
+  position: relative;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 200px;
+  border-radius: 15px;
+  height: 200px;
+  padding: 20px;
+  overflow: hidden;
+  border: 2px inset #fff;
+  -webkit-box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.445), inset -2px -2px 5px #fff;
+          box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.445), inset -2px -2px 5px #fff;
+}
+
+.keybord .key {
+  font-family: 'Ysabeau', sans-serif;
+  margin-top: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.keybord .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.keybord .row div, .keybord .row span {
+  margin-left: 10px;
+  width: 50px;
+  height: 50px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border-radius: 7px;
+  -webkit-box-shadow: 3px 3px 6px #0002, -3px -3px 6px #fff;
+          box-shadow: 3px 3px 6px #0002, -3px -3px 6px #fff;
+  cursor: pointer;
+  border: 1px solid transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-weight: 200;
+}
+
+.keybord .row div:hover, .keybord .row span:hover {
+  border-color: #ee7b1c;
+  color: #ec4384;
+}
+
+.keybord .row .caps {
+  width: calc(50px *1.5);
+  margin-right: 15px;
+}
+
+.keybord .row .space {
+  width: calc(50px *9.4);
+}
+
+.keybord .row .back44 {
+  width: calc(50px *1.5);
+  margin-left: 20px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.active {
+  border: 1px solid #ee7b1c;
+  color: #ec4384;
+  background-color: #cfc6c6;
+}
+/*# sourceMappingURL=key.css.map */
